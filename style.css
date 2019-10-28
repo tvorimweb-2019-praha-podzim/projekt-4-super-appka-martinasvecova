@@ -20,6 +20,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     font-size: 16px;
+    color: #25133d;
     line-height: 1.5;
 }
 
@@ -31,3 +32,108 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+.hlavicka {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+
+.hlavicka li {
+    align-items: space-between;
+    padding: 15px 30px;
+}
+
+.horniNazev {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.stred {
+    background-image: url(images/pozadi.jpg);
+    background-size: cover;
+    position: relative;
+    height: 450px;
+    color: white;
+    padding-left: 40px;
+}
+
+.telefon {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.hlavniNazev {
+    margin: 0;
+    font-size: 5.2rem;
+    font-weight: 400;
+    padding: 50px 0 30px 0;
+}
+
+.podnadpis {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.tlacitka {
+    list-style: none;
+    display: inline-flex;
+    margin: 40px 0;
+    padding: 0;
+}
+
+.tlacitka a {
+    padding: 15px 30px;
+    margin-right: 20px;
+    border: solid white 0.5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+}
+
+.tlacitka a:hover,
+.tlacitka a:focus,
+.tlacitka a:active {
+    background:  #48418e;
+}
+
+.popis {
+    display: flex;
+}   
+
+.ikona {
+    width: 60px;
+}
+
+.cestuj,
+.chatuj,
+.zazij {
+    flex: 1 1 calc(100% / 3);
+    text-align: center;
+    padding: 30px;
+}
+
+.cestuj h2,
+.chatuj h2,
+.zazij h2 {
+    color: #48418e;
+    font-size: 1.4rem;
+    margin: 0;
+    padding-top: 10px;
+}    
+
+footer {
+    text-align: center;
+    margin-bottom: 80px;
+    background-color: #48418e;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 300;
+    padding: 10px;
+}
